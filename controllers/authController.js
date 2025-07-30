@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-let users = [] //burada gecici user tutuyoruz db kullanmadigimiz icin
+let users = [] 
 
 exports.signup = async (req, res) => {
     const {username, password} = req.body
