@@ -5,7 +5,7 @@ const { verifyToken } = require("../middleware/authMiddleware");
 const router = express.Router()
 
 router.post('/signup', signup)
-router.post('/login', login)
+router.post('/auth', login)
 router.get('/profile', verifyToken, profile)
 
 module.exports = router
